@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pastelaria Juvevê</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style type="text/css">
+        /* Estilos gerais */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Estilos para o menu */
+        .menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #f2f2f2;
+            width: 250px;
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-item {
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-decoration-color: #bd3737;
+            text-underline-offset: 6px;
+            color: #bd3737;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            margin-top: 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .menu button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #bd3737;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Estilos para o conteúdo */
+        .content {
+            padding: 20px;
+            margin-left: 250px;
+        }
+
+        .call-to-action {
+            background-color: yellow;
+            padding: 20px;
+            text-align: center;
+            color: black;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .map-container {
+            position: relative;
+            padding-bottom: 40%;
+            height: 0;
+            overflow: hidden;
+            margin-top: 40px;
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50%;
+            height: 80%;
+        }
+
+        /* Estilos para o footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .footer-link {
+            color: #161616;
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #131313;
+            vertical-align: middle;
+        }
+
+        /* Estilos para o texto na imagem */
+        .text {
+            fill: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            text-anchor: middle;
+        }
+
+        /* Estilos para dispositivos menores */
+        @media only screen and (max-width: 768px) {
+            .menu {
+                width: 100%;
+                height: auto;
+                padding-bottom: 20px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .menu ul {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .menu li {
+                margin: 0;
+            }
+
+            .menu a {
+                margin-right: 10px;
+            }
+
+            .content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li class="menu-item">Pastelaria Juvevê</li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li class="menu-item active"><a href="Nossa História">Nossa História</a></li>
+
+        </ul>
+        
+    </div>
+    <div class="curvas d-none d-sm-block" style="display: block; overflow: hidden; margin-top:30px;">
+        <img src="img/historia.jpg" alt="Imagem" style="position: absolute; top: 34%; left: 40%; transform: translate(-50%, -50%); max-width: 17%; max-height: 60%;">
+        <svg width="200%" height="280px" version="1.1" id="curva" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 200" style="enable-background:new 0 0 1920 200;" xml:space="preserve">
+            <style type="text/css">
+                .st0 { fill: #edb578; height: 0; }
+                .text { fill: #ffffff; font-family: Arial, sans-serif; font-size: 24px; text-anchor: middle; dominant-baseline: middle; }
+            </style>
+            <title>curvas-brancas</title>
+            <g id="Layer_1-2">
+                <path id="p1" class="st0" d="M851,22.4c-110.8,1.2-331.3,31.6-442,30C206,49.4,0,0,0,0v200h1920V6c0,0-174,76.4-415,88.4 C1340.7,102.6,1013.9,20.6,851,22.4z"/>
+                <text class="text" x="30%" y="50%" dominant-baseline="middle">
+                    <tspan x="30%" dy="0">Nossa História</tspan> 
+                    <tspan x="30%" dy="1.2em">
+                    </tspan>
+                    <tspan x="30%" dy="1.2em">
+                       
+                    </tspan>
+                </text>
+            </g>
+        </svg>
+    </div>
+    
+
+    <div class="content">
+        <h1>Nossa História</h1>
+        <p>A Pastelaria Juvevê é um dos lugares mais tradicionais de Curitiba. Localizado no coração do bairro Juvevê, nosso estabelecimento tem encantado clientes há mais de duas décadas.</p>
+
+        <p>Fundada pelo carismático casal, Dona Massako e seu marido Ricardo, a Pastelaria Juvevê se destaca pelo seu famoso pastel "Orelha de Elefante", um verdadeiro ícone gastronômico da cidade.</p>
+
+        <p>Em um ambiente descontraído, simples e acolhedor, você encontrará pessoas de todas as idades desfrutando de momentos deliciosos. Além dos pastéis e lanches saborosos, oferecemos uma ampla seleção de cervejas geladas e destilados para acompanhar sua refeição.</p>
+
+        <p>Em dias de futebol, transformamos a Pastelaria Juvevê em um verdadeiro ponto de encontro para os torcedores, que podem desfrutar de uma boa partida, cerveja gelada e saborear nossos pastéis especiais.</p>
+
+        <p>Acreditamos em oferecer uma experiência única.</p>
+
+        <div class="call-to-action">
+            <h2>Venha Conferir!</h2>
+            <p>Não perca a oportunidade de visitar a Pastelaria Juvevê e experimentar nossos deliciosos pastéis. Esperamos por você!</p>
+        </div>
+    </div>
+</body>
+
+<script>
+    // Obtém a lista de itens do menu
+    var menuItems = document.querySelectorAll('#menu-ul li');
+
+    // Adiciona um ouvinte de eventos de clique a cada item do menu
+    menuItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            // Remove a classe "active" de todos os itens do menu
+            menuItems.forEach(function (menuItem) {
+                menuItem.classList.remove('active');
+            });
+
+            // Adiciona a classe "active" apenas ao item de menu atualmente clicado
+            this.classList.add('active');
+        });
+    });
+</script>
+</html>
